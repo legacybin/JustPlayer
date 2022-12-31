@@ -30,13 +30,13 @@ jobs:
       with:
           java-version: 11
           distribution: "temurin"
-    - name: Cache Gradle packages
-      uses: actions/cache@v3
-    - name: Build with Gradle
-      run: ./gradlew assembleDebug
+          cache: 'gradle'
 
-      - name: Upload APK
+    - name: Build debug APK
+        run: ./gradlew assembleDebug lintDebug --stacktrace
+
+    - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
-          name: app
-          path: app/build/outputs/apk/debug/*.apk
+        name: app
+        path: app/build/outputs/apk/debug/*.apk
