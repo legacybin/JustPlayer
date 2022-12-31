@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:keep="@drawable/exo_styled_controls_pause">
+    <item android:drawable="@drawable/controls_gradient"/>
+    <item
+        android:drawable="@drawable/exo_ic_pause_circle_filled"
+        android:top="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:bottom="3dp">
+    </item>
+</layer-list>
